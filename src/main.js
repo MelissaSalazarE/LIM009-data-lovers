@@ -1,21 +1,11 @@
-const arrayPokemon = POKEMON.pokemon;
-// console.log(arrayPokemon);
-const containerList = document.getElementById('container-list');
-const arrayMostrado = pokemon.mostrarPokemones(arrayPokemon);
+const dataPokemon = POKEMON.pokemon;
+const container = document.getElementById("container-list");
+const mostrarPokemon = pokemon.mostrarPokemones(dataPokemon);
 
-const crearPlantilla = (data) => {
-    let plantilla = '';
-    data.forEach((data) => {
-      let carta = `
-      <div class = "card-link">
-      <label class="name">${ data.name }</label>
-      <img class="image" src="${ data.img }" /> 
-      <label class="type">${ data.type }</label>
-      <label class="weaknesses">${ data.weaknesses }</label>
-      </div>
-      `;
-      plantilla += carta;
+const newPlantilla = (plantilla)=>{
+    let crear ='';
+    plantilla.forEach((plantilla) =>{
+            })
+        
     });
-    containerList.innerHTML = plantilla;
-  };
-  crearPlantilla(arrayMostrado);
+}
