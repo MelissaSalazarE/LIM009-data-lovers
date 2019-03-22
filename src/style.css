@@ -27,3 +27,55 @@
     border-radius: 15px;
     border: 3px double #f8f409;
 }
+/* 
+body {
+    /* background-image:  */
+    /* background-attachment: fixed;
+    background-repeat: round;
+    text-align: center;
+    opacity: 70px;
+    color: aliceblue;
+}
+
+.header{
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+.container {
+    width: 100%;
+}
+
+.card-link {
+    display: inline-grid;
+    width: 150px;
+    height: 160px;
+    border-radius: 25px;
+    background-color: rgba(157, 222, 238, 0.5);
+    padding: inherit;
+    margin-bottom: 20px;
+    padding-top: 20px;
+    text-align: center;
+    -webkit-animation: mymove 5s infinite;
+    animation: mymove 5s infinite;
+}
+
+@media (max-width: 750px) {
+    .group {
+        font-size: 15px;
+    }
+}
+
+@-webkit-keyframes mymove {
+    from {background-color: rgba(199, 188, 188, 0.952);}
+    to {background-color: rgb(31, 31, 71);}
+}
+@keyframes mymove {
+    from {background-color:  rgba(199, 188, 188, 0.952);}
+    to {background-color: rgb(31, 31, 71);}
+}  */
+.card{
+    margin-left: 3%;
+    width: 8rem;
+    margin-top: 4%;
+    margin-bottom: 2%;
+}
