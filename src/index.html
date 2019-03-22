@@ -1,26 +1,25 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Data Lovers</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div id="root"></div>
-   <h1>Pokemon Go</h1>
-      <div id="primeraPantalla">
-          <button id="inicio">INICIO</button>
-          <BUtton id="pokedex">POKE-DEX</BUtton>
-          <button id="debilidad">Buscar por debilidad</button>
-          <button id="tipo">Buscar por tipo de Pokemon</button>
-          <button id="ordenaAz">Ordenar de la A-Z/Z-A</button>
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/G5zZYt3B0Mc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      </div>
-       <div id="segundaPantalla"> 
-          <div id="container-list" class="row"></div>
-          <input type="search">
-          </div>
+
+
+<div id="root"></div>
+  <h1>Pokemon Go</h1>
+
+<div id="primeraPantalla">
+   <button id="inicio">INICIO</button>
+   <button id="pokeDex">POKEDEX</button>
+   <button id="ordenar">Ordenar de la A-Z/Z-A</button>
+   <button id="mostrar">Buscar por tipo de Pokemon</button>
+   <button id="debilidad">Buscar por debilidad</button>
+   <iframe width="560" height="315" src="https://www.youtube.com/embed/yQCREgz4tQY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+   
+<div id="segundaPantalla">
+<button id="inicio">INICIO</button>
+   <button id="pokeDex">POKEDEX</button>
+   <textarea name="buscador" id="buscador"></textarea>¡Usa la busqueda avanzada, para encontrar tu Pokemon por su tipo, debilidad y habilidad!<img src="img/lupa.jpg" alt="">
+   <div id="container-list" class="container"></div>
+</div>
+   
+   
     <script src="./data/pokemon/pokemon.js"></script>
     <script src="data.js"></script>
     <script src="main.js"></script>
