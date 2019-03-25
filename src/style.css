@@ -1,54 +1,33 @@
-#inicio{
-    text-decoration: none;
-    padding: 3px;
-    padding-left: 10px;
-    padding-right: 10px;
-    font-family: helvetica;
-    font-weight: 300;
-    font-size: 25px;
-    font-style: italic;
-    color: #faf60e;
-    background-color: #e92727;
-    border-radius: 15px;
-    border: 3px double #f8f409;
-}
-
-#pokedex{
-    text-decoration: none;
-    padding: 3px;
-    padding-left: 10px;
-    padding-right: 10px;
-    font-family: helvetica;
-    font-weight: 300;
-    font-size: 25px;
-    font-style: italic;
-    color: #faf60e;
-    background-color: #e92727;
-    border-radius: 15px;
-    border: 3px double #f8f409;
-}
-/* 
-body {
-    /* background-image:  */
-    /* background-attachment: fixed;
-    background-repeat: round;
-    text-align: center;
-    opacity: 70px;
-    color: aliceblue;
-}
-
-.header{
-    padding-bottom: 20px;
-    padding-top: 20px;
-}
 .container {
     width: 100%;
+    height: 100%;
 }
 
-.card-link {
+.logo {
+    text-align: center;
+    height: 250px;
+}
+
+.selectTip {
+    border: 1px solid black;
+    border-radius: 5px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    
+}
+#inicio, #pokeDex {
+    border: 1px solid black;
+    border-radius: 5px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+}
+
+.list-group-item{
     display: inline-grid;
-    width: 150px;
-    height: 160px;
+    width: 180px;
+    height: 180px;
     border-radius: 25px;
     background-color: rgba(157, 222, 238, 0.5);
     padding: inherit;
@@ -72,10 +51,5 @@ body {
 @keyframes mymove {
     from {background-color:  rgba(199, 188, 188, 0.952);}
     to {background-color: rgb(31, 31, 71);}
-}  */
-.card{
-    margin-left: 3%;
-    width: 8rem;
-    margin-top: 4%;
-    margin-bottom: 2%;
 }
+
