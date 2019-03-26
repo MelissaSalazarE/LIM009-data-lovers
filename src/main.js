@@ -40,4 +40,3 @@ mostrar+=cartilla;
 };
 containerList.innerHTML+=mostrar;
 }
-mostrarPokemon(containerList);
