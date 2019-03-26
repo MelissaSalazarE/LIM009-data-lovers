@@ -10,18 +10,28 @@
   <body>
 <div id="root"></div>
 <img class="logo" alt="logo de pokemon go" src="https://vignette.wikia.nocookie.net/es.pokemon/images/1/19/Logo_Pok%C3%A9mon_GO.png/revision/latest?cb=20150910124751" />
+<button id="inicio">INICIO</button>
+<button id="pokeDex">POKEDEX</button>
 <div id="primeraPantalla">
-      <button id="inicio">INICIO</button>
-      <button id="pokeDex">POKEDEX</button>
-      <div class="group">
+      <div id="parrafo">
+        <p>
+        Pokémon GO es un videojuego de realidad aumentada basado en la localización desarrollado por Niantic, Inc. para dispositivos iOS y Android. Es un videojuego gratuito pero contiene microtransacciones.El juego consiste en buscar y capturar personajes de la saga Pokémon escondidos en ubicaciones del mundo real y luchar con ellos, lo que implica desplazarse físicamente por las calles de la ciudad para progresar. La aplicación comporta un elemento de interacción social, ya que promueve reuniones físicas de los usuarios en distintas ubicaciones de sus poblaciones. 
+        </p>
+      </div>
+      <div id="imagen">  
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/yQCREgz4tQY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+</div>        
+<div id="segundaPantalla">
+  <div class="group">
           <select class="select" id="orden-pokemon">
+              <option value="">Ordena aquí tus Pokemones alfabeticamente</option>
               <option value="Az">de A a Z</option>
               <option value="Za">de Z a A</option>
           </select>
-      </div>
-    </li>
+    </div>
   <div class="group">
-      <select class="selectTip" id="tipo-pokemon">
+      <select class="seleccionarTip" id="tipo-pokemon">
           <option value="Selected">Selecciona tipo pokemon</option>
           <option value="Water">Agua</option>
           <option value="Bug">Bicho</option>
@@ -41,7 +51,7 @@
       </select>
   </div>
   <div class="group">
-      <select class="selectDeb" id="debilidad-pokemon">
+      <select class="seleccionarDeb" id="debilidad-pokemon">
           <option value="Selected">Selecciona tipo Debilidad</option>
           <option value="Water">Agua</option>
           <option value="Bug">Bicho</option>
@@ -59,20 +69,11 @@
           <option value="Poison">Veneno</option>
           <option value="Flying">Volador</option>
       </select>
-      </div>
-      <div align="right">  
-<iframe width="560" height="315" src="https://www.youtube.com/embed/yQCREgz4tQY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
-</div>
-   
-<div id="segundaPantalla">
-<button id="inicio">INICIO</button>
-   <button id="pokeDex">POKEDEX</button>
-   <textarea name="buscador" id="buscador"></textarea>¡Usa la busqueda avanzada, para encontrar tu Pokemon por su tipo, debilidad y habilidad!<img src="img/lupa.jpg" alt="">
-   <div id="container-list" class="container"></div>
-</div>
-   
-   
+    </div>    
+  <div>
+    <div id="container-list" class="container"></div>
+  </div>
+</div>  
     <script src="./data/pokemon/pokemon.js"></script>
     <script src="data.js"></script>
     <script src="main.js"></script>

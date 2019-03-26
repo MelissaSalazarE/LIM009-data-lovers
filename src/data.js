@@ -1,3 +1,16 @@
+const mostrarPokemones=(data)=>{
+    let arrayMostrar =[];
+    for (let i = 0; i < data.length; i++) {
+        arrayMostrar.push({name:data[i].name, img:data[i].img, })
+        
+    }
+    return arrayMostrar;
+}
+
+window.pokemon={
+    mostrarPokemones
+}
+
 const arrayNombres =POKEMON.pokemon;
 newarray = [];
 for(i=0; i<arrayNombres.length; i++){
