@@ -24,7 +24,7 @@ seccionPokedex.addEventListener('click',() => {
 
 const dataPokemon = POKEMON.pokemon;
 const containerList= document.getElementById("container-list");
-
+const arrayPokemon=pokemon.mostrarPokemones(dataPokemon);
 const mostrarPokemon = (dataPokemon)=>{
 	let mostrar ='';
 for(let i=0; i<dataPokemon.length; i++){
