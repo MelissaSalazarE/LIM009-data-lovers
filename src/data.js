@@ -1,49 +1,36 @@
-const mostrarPokemones=(data)=>{
-    let arrayMostrar =[];
-    for (let i = 0; i < data.length; i++) {
-        arrayMostrar.push({name:data[i].name, img:data[i].img, })
-        
-    }
-    return arrayMostrar;
-}
-
-window.pokemon={
-    mostrarPokemones
-}
-
-const arrayNombres =POKEMON.pokemon;
-newarray = [];
-for(i=0; i<arrayNombres.length; i++){
-	newarray.push(arrayNombres[i].name);
+// 
+const crearListaDePokemones = (data) => {
+	let arrayMostrar = [];
+	for (let i = 0; i < data.length; i++) {
+		arrayMostrar.push({ name: data[i].name, img: data[i].img, type: data[i].type, weaknesses: data[i].weaknesses})
 	}
+	return arrayMostrar;
+};
 
-function ordenarAZ(a, b) {
-	if(typeof a === 'string' && typeof b === 'string'){
-	  a = a.toLowerCase();
-	  b = b.toLowerCase();  
-	}  
-	if (a > b) {
-	  return 1;
-	} else if (a < b) {
-
-        
-	  return -1;
-	} else if (a === b) {
-	  return 0;
+const ordenarPokemones = (data, tipo) => {
+	let ordenar = [];
+	for (let i = 0; i < data.length; i++) {
+		ordenar.push({name: data[i].name, img: data[i].img, type: data[i].type, weaknesses: data[i].weaknesses});
 	}
-  }
-  //console.log(newarray.sort(ordenar));
+		ordenar.sort((firtsName,lastName) => {
+			if (firtsName.name > lastName.name) { 
+			return 1;
+			}
+			if (firtsName.name < lastName.name) { 
+			return -1;
+			}
+			return 0;
+		});
 
-  function ordenarZA(a, b) {
-	a = a.toLowerCase();
-	b = b.toLowerCase(); 
+	if (tipo ==='Az') {
+	return ordenar;
+	}
+	if (tipo ==='Za') {
+  return ordenar.reverse();
+	}
+};
 
-  if (a > b) {
-	return 1;
-  } else if (a < b) {
-	return -1;
-  } else if (a === b) {
-	return 0;
-  }
-}
-console.log(newarray.sort(ordenarZA).reverse());
+	window.pokemon = {
+		crearListaDePokemones,
+		ordenarPokemones,
+	}
