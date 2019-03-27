@@ -43,9 +43,24 @@ const filtrarPokemones = (data, tipo) => {
 	  });
 	return arrayFiltrar;
 	}
+
+	const filtrarPorDebilidad = (data, tipo) => {
+		let arrayDebilidad = [];
+		arrayDebilidad=data
+		.filter((contenido) => {
+		for (let i = 0; i < contenido.weaknesses.length; i++) {
+			if (contenido.weaknesses[i] === tipo) {
+				return 1;
+	  
+			  }
+			}
+		  });
+		return arrayDebilidad;
+		}
 	
 	window.pokemon = {
 		crearListaDePokemones,
 		ordenarPokemones,
 		filtrarPokemones,
+		filtrarPorDebilidad,
 	}

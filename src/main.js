@@ -35,7 +35,7 @@ const listaDePokemones = (data) => {
 	<img class="list-group-item" src="${ data[i].img}" />
 	<label class="ist-group-item"> Nombre : ${ data[i].name}</label>
 	<label class="ist-group-item"> Tipo : ${ data[i].type}</label>
-	<label class="ist-group-item"> Habilidades : ${ data[i].weaknesses}</label>
+	<label class="ist-group-item"> Debilidad : ${ data[i].weaknesses}</label>
 	</div>
 `;
 	mostrar += cartilla;
@@ -56,5 +56,12 @@ const pokemonesFiltrados = document.getElementById("tipo-pokemon");
 pokemonesFiltrados.addEventListener("change", () => {
 	const filtrando = pokemon.filtrarPokemones(dataPokemon, pokemonesFiltrados.value);
 	listaDePokemones(filtrando);
+});
+
+//filtrar por debilidad
+const pokemonesPorHabilidad = document.getElementById("debilidad-pokemon");
+pokemonesPorHabilidad.addEventListener("change", () => {
+	const filtrandoPorHabilidad = pokemon.filtrarPorDebilidad(dataPokemon,pokemonesPorHabilidad.value);
+	listaDePokemones(filtrandoPorHabilidad);
 });
 
