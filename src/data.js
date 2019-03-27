@@ -30,7 +30,22 @@ const ordenarPokemones = (data, tipo) => {
 	}
 };
 
+const filtrarPokemones = (data, tipo) => {
+	let arrayFiltrar = [];
+	arrayFiltrar=data
+	.filter((contenido) => {
+	for (let i = 0; i < contenido.type.length; i++) {
+		if (contenido.type[i] === tipo) {
+			return 1;
+  
+		  }
+		}
+	  });
+	return arrayFiltrar;
+	}
+	
 	window.pokemon = {
 		crearListaDePokemones,
 		ordenarPokemones,
+		filtrarPokemones,
 	}

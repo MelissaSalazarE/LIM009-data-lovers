@@ -51,5 +51,10 @@ pokemonesOrdenados.addEventListener("change", () => {
 	listaDePokemones(ordenando);
 });
 
-
+// filtrado
+const pokemonesFiltrados = document.getElementById("tipo-pokemon");
+pokemonesFiltrados.addEventListener("change", () => {
+	const filtrando = pokemon.filtrarPokemones(dataPokemon, pokemonesFiltrados.value);
+	listaDePokemones(filtrando);
+});
 
