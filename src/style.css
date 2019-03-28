@@ -70,10 +70,7 @@ body {
     float: left;   
 }
 
-.seleccionarTip{
-    float: right; 
-}
-.seleccionarDeb{
+.seleccionarDeb, .seleccionarTip{
     float: center; 
 }
 
