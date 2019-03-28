@@ -1,5 +1,4 @@
 // Creando las antallas de la pagina //
-
 const seccionInicio = document.getElementById('inicio');
 const seccionPokedex = document.getElementById('pokeDex');
 const paginaInicio = document.getElementById('primeraPantalla');
@@ -59,9 +58,8 @@ pokemonesFiltrados.addEventListener("change", () => {
 });
 
 //filtrar por debilidad
-const pokemonesPorHabilidad = document.getElementById("debilidad-pokemon");
-pokemonesPorHabilidad.addEventListener("change", () => {
-	const filtrandoPorHabilidad = pokemon.filtrarPorDebilidad(dataPokemon,pokemonesPorHabilidad.value);
-	listaDePokemones(filtrandoPorHabilidad);
+const pokemonesPorDebilidad = document.getElementById("debilidad-pokemon");
+pokemonesPorDebilidad.addEventListener("change", () => {
+	const filtrandoPorDebilidad = pokemon.filtrarPorDebilidad(dataPokemon,pokemonesPorDebilidad.value);
+	listaDePokemones(filtrandoPorDebilidad);
 });
-
