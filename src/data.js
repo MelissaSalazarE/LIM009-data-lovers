@@ -63,6 +63,20 @@ const filtrarPorDebilidad = (data, tipo) => {
 	return arrayDebilidad;
 }
 
+const contarDebilidad=POKEMON.pokemon;
+//console.log(Object.values(POKEMON.pokemon));
+let menor=0
+for ( let i=1; i<contarDebilidad.length;i++){
+  let contar=contarDebilidad[i].weaknesses.length;
+  //console.log(contarDebilidad[i].weaknesses);
+  if (contar<contarDebilidad[menor].weaknesses.length){
+menor=i;
+  }
+ 
+  }
+  console.log(menor);
+
+
 window.pokemon = {
 	crearListaDePokemones,
 	ordenarPokemones,

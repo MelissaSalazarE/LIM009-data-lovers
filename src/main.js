@@ -1,21 +1,34 @@
 // Creando las antallas de la pagina //
 const seccionInicio = document.getElementById('inicio');
 const seccionPokedex = document.getElementById('pokeDex');
+const seccioEstadistica= document.getElementById('estadistica');
 const paginaInicio = document.getElementById('primeraPantalla');
 const paginapokedex = document.getElementById('segundaPantalla');
+const paginaEstadistica= document.getElementById('terceraPantalla');
+const container = document.getElementById('container-list');
 
 paginaInicio.style.display = "block";
 paginapokedex.style.display = "none";
+paginaEstadistica.style.display= "none";
+container.style.display="none";
 
 seccionInicio.addEventListener('click', () => {
 	paginaInicio.style.display = "block";
 	paginapokedex.style.display = "none";
-
+	paginaEstadistica.style.display= "none";
 });
 seccionPokedex.addEventListener('click', () => {
 	paginaInicio.style.display = "none";
 	paginapokedex.style.display = "block";
+	paginaEstadistica.style.display= "none";
+	container.style.display="block";
 
+});
+seccioEstadistica.addEventListener('click', () => {
+	paginaInicio.style.display = "none";
+	paginapokedex.style.display = "none";
+	paginaEstadistica.style.display= "block";
+	container.style.display="block";
 });
 
 // creando las funciones de la primera historia //
