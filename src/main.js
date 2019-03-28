@@ -63,4 +63,3 @@ pokemonesPorDebilidad.addEventListener("change", () => {
 	const filtrandoPorDebilidad = pokemon.filtrarPorDebilidad(dataPokemon,pokemonesPorDebilidad.value);
 	listaDePokemones(filtrandoPorDebilidad);
 });
-

@@ -28,6 +28,7 @@ const ordenarPokemones = (data, tipo) => {
 	if (tipo === 'Za') {
 		return ordenar.reverse();
 	}
+
 };
 const filtrarPokemon = (data, tipo)=>{
 	let filtrar=[];
