@@ -29,8 +29,13 @@ const ordenarPokemones = (data, tipo) => {
   return ordenar.reverse();
 	}
 };
+const filtrarPokemon = (data, tipo)=>{
+	let filtrar=[];
+	
+}
 
-	window.pokemon = {
+
+window.pokemon = {
 		crearListaDePokemones,
 		ordenarPokemones,
 	}
