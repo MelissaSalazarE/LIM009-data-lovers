@@ -30,6 +30,10 @@ const ordenarPokemones = (data, tipo) => {
 	}
 
 };
+const filtrarPokemon = (data, tipo)=>{
+	let filtrar=[];
+	
+}
 
 const filtrarPokemones = (data, tipo) => {
 	let arrayFiltrar = [];
@@ -65,17 +69,3 @@ window.pokemon = {
 	filtrarPokemones,
 	filtrarPorDebilidad,
 }
-
-const contarDebilidad=POKEMON.pokemon;
-//console.log(Object.values(POKEMON.pokemon));
-let menor=0
-for ( let i=1; i<contarDebilidad.length;i++){
-  let contar=contarDebilidad[i].weaknesses.length;
-  //console.log(contarDebilidad[i].weaknesses);
-  if (contar<contarDebilidad[menor].weaknesses.length){
-menor=i;
-  }
- 
-  }
-  console.log(menor);
-	

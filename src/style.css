@@ -1,18 +1,34 @@
-#inicio, #pokeDex {
-    border: 1px solid black;
-    border-radius: 5px;
-    font-size: 20px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-style: normal;
-    float: center; 
+#inicio, #pokeDex , #estadistica{
+    background: #BDC581;
+    font-family: sans-serif;
+/*D*/
+background-image: -webkit-linear-gradient(top, #0d0d31, #2079b0);
+  background-image: -moz-linear-gradient(top, #0d0d31, #2079b0);
+  background-image: -ms-linear-gradient(top, #0d0d31, #2079b0);
+  background-image: -o-linear-gradient(top, #0d0d31, #2079b0);
+  background-image: linear-gradient(to bottom, #0d0d31, #2079b0);
+
+/*B*/
+-webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  text-shadow: 3px 2px 1px #150620;
+  box-shadow: 6px 5px 24px #150620;
+  color: #fafafa;
+  font-size: 18px;
+  padding: 19px;
+  text-decoration: none;
 }
+
 body {
     background-attachment: fixed;
     background-repeat: round;
     text-align: center;
     opacity: 70px;
     color: aliceblue;
+    background-image: url(img/imglogo3.jpg);   
 }
+
 
 .header{
     padding-bottom: 20px;
@@ -77,19 +93,47 @@ body {
 }
 
 @-webkit-keyframes mymove {
-    from {background-color: rgba(199, 188, 188, 0.952);}
+    from {background-color: rgba(7, 2, 2, 0.952);}
     to {background-color: rgb(31, 31, 71);}
 }
 @keyframes mymove {
-    from {background-color:  rgba(199, 188, 188, 0.952);}
-    to {background-color: rgb(31, 31, 71);}
+    from {background-color:  rgba(45, 4, 99, 0.952);}
+    to {background-color: rgb(22, 15, 54);}
 }
-#parrafo{
-    float: left;
-    padding: 10px;
-    color: aqua;
-    width: 300px;
-    margin: 40px;
-    background: #039;
-    overflow: hidden;
+
+/* para la imagen desglozable */
+.slider {
+    width: 100%;
+    margin:auto;
 }
+
+.slider ul {
+display: flex;
+padding: 0;
+width: 220%;
+animation: cambio 10s infinite alternate linear;
+}
+
+.slider li {
+width: 100%;
+list-style: none;
+}
+.slider img {
+    width: 100%;
+}
+
+@keyframes cambio {
+    0%{ margin-left: 0;}
+    10%{margin-left:0;}
+    15%{margin-left: 0;}
+    20%{margin-left: 0;}
+  
+    0%{ margin-right:0;}
+    25%{ margin-left:-20%}
+    45%{margin-left:-40%}
+    55%{margin-left:-45%}
+    70%{margin-left:-60%}
+    75%{margin-left:-65%}
+    80%{ margin-left:-80%}
+    90%{margin-left:-90%}
+    100%{ margin-left:-100%}
