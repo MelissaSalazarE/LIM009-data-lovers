@@ -47,10 +47,10 @@ const listaDePokemones = (data) => {
 	<img class="list-group-item" src="${ data[i].img}" />
 	<label class="ist-group-item"> Nombre : ${ data[i].name}</label>
 	<label class="ist-group-item"> Tipo : ${ data[i].type}</label> 
-	// `;
-	//  data[i].next_evolution.forEach(evo => {
-	// 	cartilla += ` <label class="ist-group-item"> Evolución : ${evo.name}</label>
-	// 	</div> evo.name);	
+	`;
+	  data[i].next_evolution.forEach(evo => {
+	 	cartilla += ` <label class="ist-group-item"> Evolución : ${evo.name}</label>
+	 	</div> evo.name);	
 	`; 
 	mostrar += cartilla;
 	});
@@ -74,13 +74,6 @@ pokemonesFiltrados.addEventListener("change", () => {
 	listaDePokemones(filtrando);
 });
 
-<<<<<<< HEAD
-//filtrar por evolucion
-const filtrarPorEvolucion = document.getElementById('evolución-pokemon');
-filtrarPorEvolucion.addEventListener("change", () => {
-	const filtrar = pokemon.filtrarEvolucion(dataPokemon, filtrarPorEvolucion.value);
-	listaDePokemones(filtrar);
-=======
 //filtrar por debilidad
 const porcentaje = document.getElementById("porcentaje");
 
@@ -90,5 +83,4 @@ pokemonesPorDebilidad.addEventListener("change", () => {
 	listaDePokemones(filtrandoPorDebilidad);
 	const estadis = pokemon.estadistica(filtrandoPorDebilidad,dataPokemon)
 porcentaje.innerHTML= estadis;
->>>>>>> 22de9b98016da35141ca4f0aa7d40bbe9f4cc821
 });
