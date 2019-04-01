@@ -74,9 +74,21 @@ pokemonesFiltrados.addEventListener("change", () => {
 	listaDePokemones(filtrando);
 });
 
+<<<<<<< HEAD
 //filtrar por evolucion
 const filtrarPorEvolucion = document.getElementById('evolución-pokemon');
 filtrarPorEvolucion.addEventListener("change", () => {
 	const filtrar = pokemon.filtrarEvolucion(dataPokemon, filtrarPorEvolucion.value);
 	listaDePokemones(filtrar);
+=======
+//filtrar por debilidad
+const porcentaje = document.getElementById("porcentaje");
+
+const pokemonesPorDebilidad = document.getElementById("debilidad-pokemon");
+pokemonesPorDebilidad.addEventListener("change", () => {
+	const filtrandoPorDebilidad = pokemon.filtrarPorDebilidad(dataPokemon,pokemonesPorDebilidad.value);
+	listaDePokemones(filtrandoPorDebilidad);
+	const estadis = pokemon.estadistica(filtrandoPorDebilidad,dataPokemon)
+porcentaje.innerHTML= estadis;
+>>>>>>> 22de9b98016da35141ca4f0aa7d40bbe9f4cc821
 });
