@@ -1,84 +1,64 @@
 <!DOCTYPE html>
-<html lang ="es">
+<html lang="es">
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>POKEMON GO</title>
-    <link rel="stylesheet" href="style.css" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  </head>
-  <body>
-<div id="root"></div>
-<button id="inicio">INICIO</button>
-<button id="pokeDex">POKEDEX</button>
-<button id="estadistica">ESTADISTICA</button>
 
-<div class="slider">
-  <ul>
-    <li><img src="img/imag1.png" alt=""></li>
-    <li><img src="img/imag2.png" alt=""></li>
-    <li><img src="img/imag3.png" alt=""></li>
-    <li><img src="img/imag4.png" alt=""></li>
-    <li><img src="img/imag5.png" alt=""></li>
-    <li><img src="img/imag6.png" alt=""></li>
-    <li><img src="img/7.png" alt=""></li>
-    <li><img src="img/8.png" alt=""></li>
-    <li><img src="img/9.png" alt=""></li>
-    <li><img src="img/10.png" alt=""></li>
-    <li><img src="img/11.png" alt=""></li>
-    <li><img src="img/12.png" alt=""></li>
-    <li><img src="img/13.png" alt=""></li>
-    <li><img src="img/14.png" alt=""></li>
-    <li><img src="img/15.png" alt=""></li>
-    <li><img src="img/16.png" alt=""></li>
-    <li><img src="img/17.png" alt=""></li>
-    <li><img src="img/18.png" alt=""></li>
-    <li><img src="img/19.png" alt=""></li>
-    <li><img src="img/20.png" alt=""></li>
-    <li><img src="img/21.png" alt=""></li>
-    <li><img src="img/22.png" alt=""></li>
-    <li><img src="img/23.png" alt=""></li>
-    <li><img src="img/24.png" alt=""></li>
-  </ul>
-</div>
-<div id="primeraPantalla">
-        <div id="imagen">  
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/yQCREgz4tQY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      </div>
-</div>        
-<div id="segundaPantalla">
-  <div class="group">
-          <select class="select" id="orden-pokemon">
-              <option value="">Ordena aquí tus Pokemones alfabeticamente</option>
-              <option value="Az" >de A a Z</option>
-              <option value="Za" >de Z a A</option>
-          </select>
-    </div>
-      <div class="group">
-      <select class="seleccionarTip" id="tipo-pokemon">
-          <option value="Selected">Selecciona tipo pokemon</option>
-          <option value="Water">Agua</option>
-          <option value="Bug">Bicho</option>
-          <option value="Dragon">Dragón</option>
-          <option value="Electric">Eléctrico</option>
-          <option value="Ghost">Fantasma</option>
-          <option value="Fire">Fuego</option>
-          <option value="Ice">Hielo</option>
-          <option value="Grass">Hierba</option>
-          <option value="Fighting">Luchador</option>
-          <option value="Normal">Normal</option>
-          <option value="Psychic">Psíquico</option>
-          <option value="Rock">Roca</option>
-          <option value="Ground">Tierra</option>
-          <option value="Poison">Veneno</option>
-          <option value="Flying">Volador</option>
-      </select>
+<head>
+  <meta charset="utf-8">
+  <title>POKEMON GO</title>
+  <link rel="stylesheet" href="style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+  <div id="root"></div>
+  <button id="inicio">INICIO</button>
+  <button id="pokeDex">POKEDEX</button>
+  <button id="estadistica">ESTADISTICA</button>
+  <div class="slider">
+    <ul>
+      <li><img src="img/imag1.png" alt=""></li>
+      <li><img src="img/imag2.png" alt=""></li>
+      <li><img src="img/imag3.png" alt=""></li>
+      <li><img src="img/imag4.png" alt=""></li>
+      <li><img src="img/imag5.png" alt=""></li>
+      <li><img src="img/imag6.png" alt=""></li>
+      <li><img src="img/7.png" alt=""></li>
+      <li><img src="img/8.png" alt=""></li>
+      <li><img src="img/9.png" alt=""></li>
+      <li><img src="img/10.png" alt=""></li>
+      <li><img src="img/11.png" alt=""></li>
+      <li><img src="img/12.png" alt=""></li>
+      <li><img src="img/13.png" alt=""></li>
+      <li><img src="img/14.png" alt=""></li>
+      <li><img src="img/15.png" alt=""></li>
+      <li><img src="img/16.png" alt=""></li>
+      <li><img src="img/17.png" alt=""></li>
+      <li><img src="img/18.png" alt=""></li>
+      <li><img src="img/19.png" alt=""></li>
+      <li><img src="img/20.png" alt=""></li>
+      <li><img src="img/21.png" alt=""></li>
+      <li><img src="img/22.png" alt=""></li>
+      <li><img src="img/23.png" alt=""></li>
+      <li><img src="img/24.png" alt=""></li>
+    </ul>
   </div>
-</div>
-  <div id="terceraPantalla">
-  <div class="group">
-      <select class="seleccionarDeb" id="evolución-pokemon">
-        <option value="Selected">Selecciona por evolución</option>
+  <div id="primeraPantalla">
+    <div id="imagen">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/yQCREgz4tQY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+    </div>
+  </div>
+  <div id="segundaPantalla">
+    <div class="group">
+      <select class="select" id="orden-pokemon">
+        <option value="">Ordena aquí tus Pokemones alfabeticamente</option>
+        <option value="Az">de A a Z</option>
+        <option value="Za">de Z a A</option>
+      </select>
+    </div>
+    <div class="group">
+      <select class="seleccionarTip" id="tipo-pokemon">
+        <option value="Selected">Selecciona tipo pokemon</option>
         <option value="Water">Agua</option>
         <option value="Bug">Bicho</option>
         <option value="Dragon">Dragón</option>
@@ -93,19 +73,45 @@
         <option value="Rock">Roca</option>
         <option value="Ground">Tierra</option>
         <option value="Poison">Veneno</option>
-        <option value="Flying">Volador</option>   
+        <option value="Flying">Volador</option>
       </select>
-      <div><p id="porcentaje"></p></div>
-        
+    </div>
+  </div>
+  <div id="terceraPantalla">
+    <div class="group">
+      <select class="seleccionarDeb" id="debilidad-pokemon">
+        <option value="Selected">Selecciona según su Debilidad</option>
+        <option value="Water">Agua</option>
+        <option value="Bug">Bicho</option>
+        <option value="Dragon">Dragón</option>
+        <option value="Electric">Eléctrico</option>
+        <option value="Ghost">Fantasma</option>
+        <option value="Fire">Fuego</option>
+        <option value="Ice">Hielo</option>
+        <option value="Grass">Hierba</option>
+        <option value="Fighting">Luchador</option>
+        <option value="Normal">Normal</option>
+        <option value="Psychic">Psíquico</option>
+        <option value="Rock">Roca</option>
+        <option value="Ground">Tierra</option>
+        <option value="Poison">Veneno</option>
+        <option value="Flying">Volador</option>
+      </select>
+      <div id="resultado">
+        <p>Sabias que el porcentaje de los pokemones por debilidad es :</p>
+        <p id="porcentaje"></p>
       </div>
-    </div> 
-  </div> 
+
+    </div>
+  </div>
+  </div>
   <div>
     <div id="container-list" class="container"></div>
   </div>
 
-    <script src="./data/pokemon/pokemon.js"></script>
-    <script src="data.js"></script>
-    <script src="main.js"></script>
-  </body>
+  <script src="./data/pokemon/pokemon.js"></script>
+  <script src="data.js"></script>
+  <script src="main.js"></script>
+</body>
+
 </html>

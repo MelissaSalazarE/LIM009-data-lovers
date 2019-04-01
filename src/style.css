@@ -134,3 +134,7 @@ list-style: none;
     80%{ margin-left:-80%}
     90%{margin-left:-90%}
     100%{ margin-left:-100%}
+}
+#resultado{
+    color: black;
+}
