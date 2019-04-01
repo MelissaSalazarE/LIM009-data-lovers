@@ -42,23 +42,20 @@ const dataPokemon = POKEMON.pokemon;
 const listaDePokemones = (data) => {
 	let mostrar = '';
 	for (let i = 0; i < data.length; i++) {
-		cartilla = `
+			cartilla = `
 	<div class="card-link">
 	<img class="list-group-item" src="${ data[i].img}" />
 	<label class="ist-group-item"> Nombre : ${ data[i].name}</label>
-	<label class="ist-group-item"> Tipo : ${ data[i].type}</label> 
-	`;
-	  data[i].next_evolution.forEach(evo => {
-	 	cartilla += ` <label class="ist-group-item"> Evolución : ${evo.name}</label>
-	 	</div> evo.name);	
-	`; 
+	<label class="ist-group-item"> Tipo : ${ data[i].type}</label>
+	<label class="ist-group-item"> Debilidad : ${ data[i].weaknesses}</label>
+	</div>
+`;
 	mostrar += cartilla;
-	});
 	};
-	
 	containerList.innerHTML = mostrar;
 }
-listaDePokemones(dataPokemon);
+listaDePokemones(arrayPokemon);
+
 
 // la funcion para el ordenado //
 
