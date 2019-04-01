@@ -49,10 +49,12 @@ const filtrarPokemones = (data, tipo) => {
 	return arrayFiltrar;
 }
 
+
 const filtrarPorDebilidad = (data, tipo) => {
 	let arrayDebilidad = [];
 	arrayDebilidad = data
 		.filter((contenido) => {
+	
 			for (let i = 0; i < contenido.weaknesses.length; i++) {
 				if (contenido.weaknesses[i] === tipo) {
 					return 1;
@@ -60,10 +62,19 @@ const filtrarPorDebilidad = (data, tipo) => {
 				}
 			}
 		});
-	return arrayDebilidad;
-}
+		//return(arrayDebilidad.length/data.length);
 
-const contarDebilidad=POKEMON.pokemon;
+
+		return arrayDebilidad;
+
+	}
+
+	const estadistica= (array,data)=>{
+		return array.length/data.length;
+
+	}
+
+/*const contarDebilidad=POKEMON.pokemon;
 //console.log(Object.values(POKEMON.pokemon));
 let menor=0
 for ( let i=1; i<contarDebilidad.length;i++){
@@ -74,7 +85,7 @@ menor=i;
   }
  
   }
-  console.log(menor);
+  console.log(menor);*/
 
 
 window.pokemon = {
@@ -82,4 +93,6 @@ window.pokemon = {
 	ordenarPokemones,
 	filtrarPokemones,
 	filtrarPorDebilidad,
+	estadistica,
+
 }
