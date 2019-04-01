@@ -37,7 +37,7 @@ const containerList = document.getElementById('container-list');
 const pokemonesOrdenados = document.getElementById('orden-pokemon');
 const dataPokemon = POKEMON.pokemon;
 
-const arrayPokemon = pokemon.crearListaDePokemones(dataPokemon);
+//const arrayPokemon = pokemon.crearListaDePokemones(dataPokemon);
 
 const listaDePokemones = (data) => {
 	let mostrar = '';
@@ -46,15 +46,19 @@ const listaDePokemones = (data) => {
 	<div class="card-link">
 	<img class="list-group-item" src="${ data[i].img}" />
 	<label class="ist-group-item"> Nombre : ${ data[i].name}</label>
-	<label class="ist-group-item"> Tipo : ${ data[i].type}</label>
-	<label class="ist-group-item"> Debilidad : ${ data[i].weaknesses}</label>
-	</div>
-`;
+	<label class="ist-group-item"> Tipo : ${ data[i].type}</label> 
+	// `;
+	//  data[i].next_evolution.forEach(evo => {
+	// 	cartilla += ` <label class="ist-group-item"> Evolución : ${evo.name}</label>
+	// 	</div> evo.name);	
+	`; 
 	mostrar += cartilla;
+	});
 	};
+	
 	containerList.innerHTML = mostrar;
 }
-listaDePokemones(arrayPokemon);
+listaDePokemones(dataPokemon);
 
 // la funcion para el ordenado //
 
@@ -70,9 +74,9 @@ pokemonesFiltrados.addEventListener("change", () => {
 	listaDePokemones(filtrando);
 });
 
-//filtrar por debilidad
-const pokemonesPorDebilidad = document.getElementById("debilidad-pokemon");
-pokemonesPorDebilidad.addEventListener("change", () => {
-	const filtrandoPorDebilidad = pokemon.filtrarPorDebilidad(dataPokemon,pokemonesPorDebilidad.value);
-	listaDePokemones(filtrandoPorDebilidad);
+//filtrar por evolucion
+const filtrarPorEvolucion = document.getElementById('evolución-pokemon');
+filtrarPorEvolucion.addEventListener("change", () => {
+	const filtrar = pokemon.filtrarEvolucion(dataPokemon, filtrarPorEvolucion.value);
+	listaDePokemones(filtrar);
 });
