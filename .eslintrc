@@ -7,7 +7,10 @@
   },
   "extends": "eslint:recommended",
   "globals": {
-    "example": false
+    "example": false,
+    "POKEMON": false,
+    "pokemon": false
+
   },
   "rules": {
     "allowTernary": true,
