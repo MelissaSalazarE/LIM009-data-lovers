@@ -68,8 +68,7 @@ pokemonesFiltrados.addEventListener('change', () => {
   listaDePokemones(filtrando);
 });
 
-//filtrar por debilidad y mostrando estadstica
-const porcentaje = document.getElementById("porcentaje");
+//  filtrar por debilidad y mostrando estadstica  //
 
 const porcentaje = document.getElementById('porcentaje');
 const pokemonesPorDebilidad = document.getElementById('debilidad-pokemon');
@@ -80,4 +79,3 @@ pokemonesPorDebilidad.addEventListener('change', () => {
   const estadis = pokemon.estadistica(filtrandoPorDebilidad, dataPokemon);
   porcentaje.innerHTML = estadis;
 });
-
