@@ -1,6 +1,7 @@
 {
   "env": {
-    "browser": true
+    "browser": true,
+    "jest":true
   },
   "parserOptions": {
     "ecmaVersion": 6
@@ -9,7 +10,8 @@
   "globals": {
     "example": false,
     "POKEMON": false,
-    "pokemon": false
+    "pokemon": false,
+    "assert":false
 
   },
   "rules": {
