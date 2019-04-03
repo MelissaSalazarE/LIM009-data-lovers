@@ -5,7 +5,7 @@ const crearListaDePokemones = (data) => {
   }
   return arrayMostrar;
 };
-
+//funcion ordenar//
 const ordenarPokemones = (data, tipo) => {
   let ordenar = [];
   for (let i = 0; i < data.length; i++) {
