@@ -44,7 +44,7 @@ const listaDePokemones = (data) => {
   for (let i = 0; i < data.length; i++) {
     let cartilla = `
     <div class="card-link">
-    <img class="} src="${ data[i].img}" />
+    <img class="ist-group-item" src="${ data[i].img}" />
     <p class="ist-group-item"> Nombre : ${ data[i].name}</p>
     <p class="ist-group-item"> Tipo : ${ data[i].type}</p>
     <p class="ist-group-item"> Debilidad : ${ data[i].weaknesses}</p>
