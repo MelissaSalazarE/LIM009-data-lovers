@@ -2,28 +2,27 @@
 
 ## Índice
 
-* [Sobre Pokémon GO](#Sobre Pokémon GO)
-* [Definición del producto](Definición del producto)
-* [Entrevistas](#Entrevistas)
-* [Historias de usuario](#Historias de usuario)
-* [Proceso de diseño](#Proceso de diseño)
-* [Prototipo de baja fidelidad](#Prototipo de baja fidelidad)
-* [Prototipo de alta fidelidad](#Prototipo de alta fidelidad)
-* [Test de usabilidad](#Test de usabilidad)
+* [Sobre Pokémon GO](#sobre-pokémon-go)
+* [Definición del producto](#definición-del-producto)
+* [Encuestas](#Encuestas)
+* [Historias de usuario](#historias-de-usuario)
+* [Proceso de diseño](#proceso-de-diseño)
+* [Prototipo](#prototipo)
+* [Test de usabilidad](#test-de-usabilidad)
 
 ***
 
-## POKEMON GO
+## Sobre Pokémon GO
 
 Pokémon GO es un videojuego de realidad aumentada basado en la localización desarrollado por Niantic. El juego consiste en buscar y capturar personajes de la saga Pokémon escondidos en ubicaciones del mundo real y luchar con ellos, lo que implica desplazarse físicamente por las calles de la ciudad para progresar.
 
 
-## DEFINICION DEL PRODUCTO
+## Definición del producto
 
 Esta página se diseñó pensando en los jugadores de PokemonGo, para que tengan una plataforma ágil donde puedan revisar la información de los Pokemones de manera amigable.
 
 
-## ENTREVISTAS
+## Encuestas
 
 Las entrevistas se realizaron a jugadores de Pokemon Go, para saber cuáles son sus preferencias respecto a la información de los pokemones.
 
@@ -36,7 +35,7 @@ Se realizaron las siguientes preguntas:
 *¿Sí pudieras filtrar a los pokemos, porque dato de gustaría filtrarlos?
 
 
-## HISTORIAS DE USUARIO
+## Historias de usuario
 
 1)Como: Jugador de Pokémon
 Quiero: Poder identificar a los Pokemones por su imagen, su nombre y su tipo.
@@ -55,12 +54,12 @@ Quiero: Tener el promedio de los pokemones que evolucionan
 
 Para que cada historia de usuario se considere como terminada, bebe tener una funcionalidad específica, tener su prototipo, ser responsive y estar subido a gh-pages.
 
-### PROCESO DE DISEÑO
+## Proceso de diseño
 
 El proceso de diseño tiene 5 fases. Estas 5 fases nos permiten crear productos centrados en el usuario que nos aseguren que estamos satisfaciendo sus necesidades.
 
 ### Descubrimiento e investigación
-![ ](.../imgReadme/1.png)
+![descubrimiento](https://i.ibb.co/b6VKwC7/descubrimiento.png)
 
 En esta etapa identificamos las necesidades de los usuarios, lo más importante es investigar y entender a nuestros usuarios. Para ello realizamos una encuesta a 5 usuarios y se identificó la problemática.
 
@@ -73,7 +72,7 @@ En esta etapa identificamos las necesidades de los usuarios, lo más importante 
 
 ### Síntesis y definición
 
-![alt text]()
+![sintesis](https://i.ibb.co/zV5TGmP/2.png)
 
 Luego de identificar la problemática, Se planteó crear una aplicación en base a las necesidades del usuario. 
 1.	En la que puedan visualizar la información de los Pokémones (nombre, imagen, tipo).
@@ -83,7 +82,7 @@ Luego de identificar la problemática, Se planteó crear una aplicación en base
 
 ### Ideación
 
-![sin titulo](imgReadme/1.png)
+![ideación](https://i.ibb.co/L9Tb2h2/3.png)
 
 Al tener la data ya establecida, validamos con los usuarios que información será útil para ellos. Se consideraron los datos por nivel de importancia según el usuario.
 El usuario requirió:
@@ -92,39 +91,40 @@ El usuario requirió:
 3.	Tipo
 4.	Debilidades
 
-### Prototipado
+ 
+### Prototipo
 
-![sin titulo](imgReadme/2.png)
+![Prototipo](https://i.ibb.co/zJ5HFT6/4.png)
 
 El prototipo de baja fidelidad se realizó con lápiz y papel, se dibujó la pantalla 
 
 de inicio y las otras dos pantallas donde se muestra la información requerida por el usuario.
 
-![sin titulo](imgReadme/3.png)
+![baja fildelidad](https://i.ibb.co/jrjW2DS/5.png)
 
-![sin titulo](imgReadme/4.png)
+![alta](https://i.ibb.co/0V5fbLp/6.png)
 
-### Testeo con usuarios
+### Test de usabilidad
 
-![sin titulo](imgReadme/5.png)
+![test](https://i.ibb.co/tBtQyVx/7.png)
 
 Se mostró a los usuarios el prototipo de alta fidelidad y la interfaz de las primeras historias de usuario.
 
-![sin titulo](imgReadme/6.png)
+![sin titulo]()
 
 Después de mostrar el prototipo de alta fidelidad, los usuarios solicitaron que la pagina sea más práctica, es por ello que se retiraron los botones de ordenado y filtrado y se colocaron en una segunda y tercera pantalla, para que la pagina se más amigable.
 
 ### IMPLEMENTACIÓN DE LA INTERFAZ DE USUARIO (HTML/CSS/JS)
 
-![sin titulo](imgReadme/7.png)
+![hu01](https://i.ibb.co/CbGYTSp/9.png)
 
 #### Interfaz de Usuario de la HU01: 
 
-![sin titulo](imgReadme/8.png)
+![hu02](https://i.ibb.co/qgpvSYf/10.png)
 
 #### Interfaz de Usuario de la HU02:
 
-![alt text]()
+![hu03](https://i.ibb.co/TRMHhfC/12.png)
 
 #### Interfaz de Usuario de la HU03: 
 
