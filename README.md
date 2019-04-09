@@ -37,15 +37,18 @@ Se realizaron las siguientes preguntas:
 
 ## Historias de usuario
 
-1)Como: Jugador de Pokémon
+1)Yo Jugador de Pokémon 
 Quiero: Poder identificar a los Pokemones por su imagen, su nombre y su tipo.
 Para: Ubicarlos rápidamente y seleccionarlos fácilmente.
+
 2)Como: Jugador de Pokemon
 Quiero: Poder ordenar a los Pokemones de manera ascendente y descendente.
 Para: Ordenarlos por nombre
+
 3)Como: Jugador de Pokemon
 Quiero: Poder filtrar por tipo
 Para: Saber que Pokemones pertenecen al mismo tipo
+
 4)Como: Jugador de Pokemon
 Quiero: Tener el promedio de los pokemones que evolucionan
 
@@ -110,32 +113,32 @@ de inicio y las otras dos pantallas donde se muestra la información requerida p
 
 Se mostró a los usuarios el prototipo de alta fidelidad y la interfaz de las primeras historias de usuario.
 
-![sin titulo]()
+![alta](https://i.ibb.co/j48HxrL/8.png)
 
 Después de mostrar el prototipo de alta fidelidad, los usuarios solicitaron que la pagina sea más práctica, es por ello que se retiraron los botones de ordenado y filtrado y se colocaron en una segunda y tercera pantalla, para que la pagina se más amigable.
 
 ### IMPLEMENTACIÓN DE LA INTERFAZ DE USUARIO (HTML/CSS/JS)
 
-![hu01](https://i.ibb.co/CbGYTSp/9.png)
+
 
 #### Interfaz de Usuario de la HU01: 
 
-![hu02](https://i.ibb.co/qgpvSYf/10.png)
+![hu01](https://i.ibb.co/CbGYTSp/9.png)
 
 #### Interfaz de Usuario de la HU02:
 
-![hu03](https://i.ibb.co/TRMHhfC/12.png)
+![hu02](https://i.ibb.co/qgpvSYf/10.png)
 
 #### Interfaz de Usuario de la HU03: 
 
-![alt text]()
+![hu03](https://i.ibb.co/TRMHhfC/12.png)
 
 #### Interfaz de Usuario de la HU04:
 
-![alt text]()
+![hu04](https://i.ibb.co/TRMHhfC/12.png)
 
 ### Test
 
 Se realizo el test, para comprobar el porcentaje de funcionalidad del proyecto, obteniendo como resultado un 90.48%.
 
-![alt text]()
+![test](https://i.ibb.co/JvyMg3d/testa-al-90-48.png)
