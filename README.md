@@ -28,10 +28,15 @@ Las entrevistas se realizaron a jugadores de Pokemon Go, para saber cuáles son 
 
 Se realizaron las siguientes preguntas:
 *¿Cómo jugador de Pokémon cuál es tu objetivo en el juego?
+
 *¿La Información detallada de cada Pokémon te ayudaría a lograr tu objetivo?
+
 *¿Cómo jugador de Pokémon Go, que datos son más importante para ti?
+
 *¿Qué datos te permiten identificar de manera más rápida a los Pokemones?
+
 *¿Cómo te gustaría poder ordenar a los Pokemones?
+
 *¿Sí pudieras filtrar a los pokemos, porque dato de gustaría filtrarlos?
 
 
