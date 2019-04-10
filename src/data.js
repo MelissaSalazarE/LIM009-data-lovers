@@ -58,7 +58,6 @@ const filtrarPorDebilidad = (data, tipo) => {
 
 const estadistica = (array, data) => {
   let resultado = array.length / data.length;
-  console.log(resultado);
   let result = resultado.toFixed(2);
   return result;
 };

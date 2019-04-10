@@ -31,20 +31,20 @@ const filtarDebilidad = 'Electric';
 const outputPorDebilidad = [{'name': 'Zubat', 'img': 'http://www.serebii.net/pokemongo/pokemon/041.png', 'type': ['Poison', 'Flying'], 'weaknesses': ['Electric', 'Ice', 'Psychic', 'Rock']}];
 
 
- /* const inputEstadistica = [
+const inputEstadistica = [
   {'name': 'Paras', 'img': 'http://www.serebii.net/pokemongo/pokemon/046.png', 'type': ['Bug', 'Grass'], 'weaknesses': ['Fire', 'Ice', 'Poison', 'Flying', 'Bug', 'Rock']},
   {'name': 'Zubat', 'img': 'http://www.serebii.net/pokemongo/pokemon/041.png', 'type': ['Poison', 'Flying'], 'weaknesses': ['Electric', 'Ice', 'Psychic', 'Rock']},
   {'name': 'Dratini', 'img': 'http://www.serebii.net/pokemongo/pokemon/147.png', 'type': ['Dragon'], 'weaknesses': ['Ice', 'Dragon', 'Fairy']},
   {'name': 'Dragonair', 'img': 'http://www.serebii.net/pokemongo/pokemon/148.png', 'type': ['Dragon'], 'weaknesses': ['Ice', 'Dragon', 'Fairy']},
   {'name': 'Dragonair', 'img': 'http://www.serebii.net/pokemongo/pokemon/148.png', 'type': ['Dragon'], 'weaknesses': ['Ice', 'Dragon', 'Fairy']},
 ];
-const outputEstadistica = [
+const conditionCal = [
   {'name': 'Dratini', 'img': 'http://www.serebii.net/pokemongo/pokemon/147.png', 'type': ['Dragon'], 'weaknesses': ['Ice', 'Dragon', 'Fairy']},
   {'name': 'Dragonair', 'img': 'http://www.serebii.net/pokemongo/pokemon/148.png', 'type': ['Dragon'], 'weaknesses': ['Ice', 'Dragon', 'Fairy']},
   {'name': 'Dragonair', 'img': 'http://www.serebii.net/pokemongo/pokemon/148.png', 'type': ['Dragon'], 'weaknesses': ['Ice', 'Dragon', 'Fairy']},
 ];
 
-const contador = 0.019*/
+const outputEstadistica = '1.67';
 
 describe(pokemon.crearListaDePokemones, () => {
   it('es un función', () => {
@@ -89,7 +89,8 @@ describe(pokemon.estadistica, () => {
   it('es un función', () => {
     expect(typeof window.pokemon.estadistica).toBe('function');
   });
+
+  it('deberi el porcentaje de de debilidad por pokemon', () => {
+    expect(window.pokemon.estadistica(inputEstadistica, conditionCal)).toEqual(outputEstadistica);
+  });
 });
-  /* it('es un función', () => {
-    expect(window.pokemon.estadistica(contador, inputEstadistica).toEqual(outputEstadistica);
-  });*/
