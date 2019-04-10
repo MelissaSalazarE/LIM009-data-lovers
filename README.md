@@ -147,3 +147,8 @@ Después de mostrar el prototipo de alta fidelidad, los usuarios solicitaron que
 Se realizo el test, para comprobar el porcentaje de funcionalidad del proyecto, obteniendo como resultado un 90.48%.
 
 ![test](https://i.ibb.co/JvyMg3d/testa-al-90-48.png)
+
+Adjuntamos el link Zeplin:https://zpl.io/aBRmgXL, https://zpl.io/25JZnoj, https://zpl.io/adz4Bd5. 
+
+Adjuntamos el link de Pokemon: https://melissasalazare.github.io/LIM009-data-lovers/src/ 
+
