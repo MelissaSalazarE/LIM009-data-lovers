@@ -8,8 +8,7 @@ const crearListaDePokemones = (data) => {
 //  funcion ordenar  //
 const ordenarPokemones = (data, tipo) => {
   let ordenar = [];
-  for (let i = 0; i
-     < data.length; i++) {
+  for (let i = 0; i<data.length; i++) {
     ordenar.push({ name: data[i].name, img: data[i].img, type: data[i].type, weaknesses: data[i].weaknesses });
   }
   ordenar.sort((firtsName, lastName) => {
