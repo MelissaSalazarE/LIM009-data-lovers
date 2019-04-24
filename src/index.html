@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="utf-8">
   <title>POKEMON GO</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="shortcut icon" type="image/png" href="img/poke_icon.png" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
@@ -42,14 +45,14 @@
   </div>
   <div id="primeraPantalla">
     <div id="imagen">
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/yQCREgz4tQY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+      <iframe width="50%" height="340" src="https://www.youtube.com/embed/yQCREgz4tQY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
         allowfullscreen></iframe>
-    </div>
   </div>
+</div>
   <div id="segundaPantalla">
     <div class="group">
       <select class="select" id="orden-pokemon">
-        <option value="">Ordena aquí tus Pokemones alfabeticamente</option>
+        <option value="">Ordenar por:</option>
         <option value="Az">de A a Z</option>
         <option value="Za">de Z a A</option>
       </select>
@@ -101,10 +104,25 @@
       </div>
     </div>
   </div>
-    <div id="container-list" class="container">
+  <div id="container-list" class="container">
+  </div>
+  <!-- PIE DE PÁGINA -->
+  <footer>
+    <div id="footer">
+      Copyright © Todos los Derechos Reservados a Melissa Salazar
+      <ul id="social-links">
+        <li class="slink"><a href="https://www.facebook.com/gaming/pokemonletsgoeevee/?sub_view=videos&fbsource=1103&external_ref=game_search_unit"
+            target="_blank"><img class="img-icon" alt="facebook" src="https://i.ibb.co/Q8ngNnn/fb2222.png"></a></li>
+        <li class="slink"><a href="https://twitter.com/pokemon" target="_blank"><img class="img-icon" alt="twitter" src="https://i.ibb.co/tbmrdgM/twitteeer.png"></a></li>
+        <li class="slink"><a href="https://www.instagram.com/pokemon/?hl=es-la" target="_blank"><img class="img-icon" alt="instagram"
+              src="https://i.ibb.co/QHpNVHR/instagram2222.png"></a></li>
+      </ul>
     </div>
+  </footer>
+  
   <script src="./data/pokemon/pokemon.js"></script>
   <script src="data.js"></script>
   <script src="main.js"></script>
 </body>
+
 </html>

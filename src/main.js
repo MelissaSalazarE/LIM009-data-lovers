@@ -79,3 +79,4 @@ pokemonesPorDebilidad.addEventListener('change', () => {
   const estadis = pokemon.estadistica(filtrandoPorDebilidad, dataPokemon);
   porcentaje.innerHTML = estadis;
 });
+
